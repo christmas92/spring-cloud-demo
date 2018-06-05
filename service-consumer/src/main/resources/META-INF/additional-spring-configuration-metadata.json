@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "service-consumer1.ribbon",
+    "type": "java.lang.String",
+    "description": "A description for 'service-consumer1.ribbon'"
+  },
+  {
+    "name": "service-provider1.ribbon.NFLoad-balancer-rule-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'service-provider1.ribbon.NFLoad-balancer-rule-class-name'"
+  },
+  {
+    "name": "service-provider.ribbon.NFLoad-balancer-rule-class-name",
+    "type": "java.lang.String",
+    "description": "A description for 'service-provider.ribbon.NFLoad-balancer-rule-class-name'"
+  }
+]}
