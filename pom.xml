@@ -10,6 +10,7 @@
 	<modules>
 		<module>eureka</module>
 		<module>service-provider</module>
+		<module>service-consumer</module>
 	</modules>
 
 	<parent>
