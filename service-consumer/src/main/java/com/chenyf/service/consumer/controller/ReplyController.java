@@ -18,14 +18,14 @@ public class ReplyController {
 	@Autowired
 	private LoadBalancerClient loadBalancerClient;
 	
-	@GetMapping
+	@GetMapping("")
 	public String reply() {
-		return this.restTemplate.getForObject("http://service-provider1/hello/say", String.class);
+		return this.restTemplate.getForObject("http://service-provider/hello/say", String.class);
 	}
 	
 	@GetMapping("loadBalance")
 	public void loadBalance() {
-		ServiceInstance instance = loadBalancerClient.choose("service-provider1");
+		ServiceInstance instance = loadBalancerClient.choose("service-provider");
 		System.out.println(instance.getServiceId() + ":" + instance.getHost() + ":" + instance.getPort());
 	}
 }
